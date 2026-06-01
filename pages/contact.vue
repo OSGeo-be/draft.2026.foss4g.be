@@ -1,9 +1,9 @@
 <template>
     <div class="flex-1 px-4 py-6 space-y-8 lg:px-8 lg:py-12">
-        <section class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
+        <section class="flex flex-col gap-6 max-w-3xl mx-auto">
 
             <!-- Email principal -->
-            <div class="bg-off-white px-6 py-6 rounded-xl shadow sm:col-span-2 text-center">
+            <div class="bg-off-white px-6 py-6 rounded-xl shadow text-center">
                 <h1 class="text-lg font-bold mb-3">{{ $t('contact.contactUs') }}</h1>
                 <p class="text-sm text-neutral-dark mb-4">
                     {{ $t('contact.askByEmailTo') }}
@@ -19,7 +19,7 @@
             </div>
 
             <!-- Canaux de discussion -->
-            <div class="bg-off-white px-6 py-6 rounded-xl shadow sm:col-span-2">
+            <div class="bg-off-white px-6 py-6 rounded-xl shadow">
                 <h2 class="text-base font-bold mb-4">{{ $t('contact.channels.title') }}</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
 
@@ -72,6 +72,9 @@
                     {{ $t('contact.channels.matrixNote') }}
                 </p>
             </div>
+
+            <!-- Ligne basse : Réseaux sociaux + Ressources/Membre côte à côte -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 items-start">
 
             <!-- Réseaux sociaux -->
             <div class="bg-off-white px-6 py-6 rounded-xl shadow">
@@ -127,7 +130,7 @@
             </div>
 
             <!-- Ressources web + Devenir membre -->
-            <div class="flex flex-col gap-4">
+            <div class="flex flex-col gap-4 h-full">
 
                 <!-- Ressources web -->
                 <div class="bg-off-white px-6 py-6 rounded-xl shadow flex-1">
@@ -172,6 +175,8 @@
                 </div>
 
             </div>
+
+            </div><!-- fin grille basse -->
 
         </section>
     </div>
